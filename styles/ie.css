@@ -1,0 +1,18 @@
+/*
+	
+*/
+
+.mr-user-edit-wrpr, .mr-fav-wrpr, .mr-notification-wrpr{
+	border: 1px solid #e1e1e3;
+}
+
+.mr-spinner-container{
+	display:none;
+}
+
+.mr-ie-spinner{
+	background:url('../images/loader.gif');
+	display:inline-block;
+	width:36px;
+	height:36px;
+}

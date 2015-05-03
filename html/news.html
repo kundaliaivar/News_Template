@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../styles/bootstrap/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" href="../styles/fonts.css">
+    <link type="text/css" rel="stylesheet" href="../styles/jquery.selectBoxIt.css">
+    <link type="text/css" rel="stylesheet" href="../styles/jquery-ui.min.css">
+    <link type="text/css" rel="stylesheet" href="../styles/date-pickercss/jquery-ui.min.css">
+    <link type="text/css" rel="stylesheet" href="../styles/app.css">
+    <script type="text/javascript" src="../scripts/lib/jQuery.js"></script>
+    <script type="text/javascript" src="../scripts/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../scripts/lib/date-picker/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../scripts/lib/jquery.selectBoxIt.min.js"></script>
+    <script type="text/javascript" src="../scripts/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../scripts/lib/transition.js"></script>
+    <script type="text/javascript" src="../scripts/lib/collapse.js"></script>
+    <script type="text/javascript" src="../scripts/lib/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="../scripts/common.js"></script>
+    <script type="text/javascript" src="../scripts/linking-templates.js"></script><!--[if IE]>
+    <script src="../scripts/lib/placeHolder.js"></script>  
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <link href="../styles/ie.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../scripts/ie9.js"></script><![endif]-->
+    <title>Starbucks</title>
+  </head>
+  <body>
+    <div class="mr-container-whole">
+      <!--Mobile menu starts here-->
+      <!--mobile menu starts here-->
+      <div class="mr-mob-menu visible-xs">
+        <!--mobile menu content wrapper-->
+        <div class="mr-mob-menu-cont">
+          <!--mobile menu header wrapper-->
+          <div class="mr-mob-menu-hdr clearfix">
+            <!--logo in the header-->
+            <div class="mr-mob-menu-logo icon-SDRC_Logo"></div>
+          </div>
+          <!--mobile accordian wrapper-->
+          <div id="MainMenu" class="mr-mob-accordion">
+            <div class="list-group panel">
+              <!--home option wrapper starts here--><a href="#menu-item-home" data-toggle="collapse" data-parent="#MainMenu" class="list-group-item list-group-item-success collapsed">HOME					</a>
+              <div id="menu-item-home" class="collapse"></div>
+              <!--overview accordian option wrapper--><a href="#mob-menu-org" data-toggle="collapse" data-parent="#MainMenu" class="list-group-item list-group-item-success collapsed">OVERVIEW<span class="icon-uparrow"></span></a>
+              <!--overview accordian collapse wrapper-->
+              <div id="mob-menu-org" class="collapse"><a href="#" id="mr-menu-store-dev" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">STORE DEVELOPMENT</a><a href="#" id="mr-menu-leadership" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">LEADERSHIP</a></div>
+              <!--function accordian option wrapper--><a href="#mob-menu-department" data-toggle="collapse" data-parent="#MainMenu" class="list-group-item list-group-item-success collapsed">FUNCTIONS<span class="icon-uparrow"></span></a>
+              <!--function accordian collapse wrapper-->
+              <div id="mob-menu-department" class="collapse"><a href="#" id="mr-menu-construction" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">CONSTRUCTION</a><a href="#" id="mr-menu-design" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">DESIGN</a><a href="#" id="mr-menu-facility" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">FACILITIES</a><a href="#" id="mr-menu-real-estate" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">REAL ESTATE</a></div>
+              <!--store accordian option wrapper--><a href="#mob-menu-store" data-toggle="collapse" data-parent="#MainMenu" class="list-group-item list-group-item-success collapsed">STORES<span class="icon-uparrow"></span></a>
+              <!--store accordian collapse wrapper-->
+              <div id="mob-menu-store" class="collapse">
+                <!--store options--><a href="#" id="mr-menu-cafe" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">CAFE</a><a href="#" id="mr-menu-drivethru" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">DRIVE THRU</a><a href="#" id="mr-menu-kiosk" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">KIOSK</a><a href="#" id="mr-menu-temporary" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">TEMPORARY</a><a href="#" id="mr-menu-walkup" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">WALK UP</a>
+              </div>
+              <!--innovation accordian option wrapper--><a href="#mob-menu-innovation" data-toggle="collapse" data-parent="#MainMenu" class="list-group-item list-group-item-success collapsed">INNOVATION<span class="icon-uparrow"></span></a>
+              <!--innovation accordian collapse wrapper-->
+              <div id="mob-menu-innovation" class="collapse">
+                <!--innovation tab options list--><a href="#" class="list-group-item mr-collapse-list mr-menu-links mr-innovation-links">Drive Thru Evolved</a><a href="#" class="list-group-item mr-collapse-list mr-menu-links mr-innovation-links">Evenings</a><a href="#" class="list-group-item mr-collapse-list mr-menu-links mr-innovation-links">Wireless Charging</a><a href="#" class="list-group-item mr-collapse-list mr-menu-links mr-innovation-links">Mobile Order & Pay</a><a href="#" class="list-group-item mr-collapse-list mr-menu-links mr-innovation-links">Metal Casework</a><a href="#" class="list-group-item mr-collapse-list mr-menu-links mr-innovation-links mr-innovation-links">Teavana</a><a href="#" class="list-group-item mr-collapse-list mr-menu-links mr-innovation-links">Reserve Only Stores	</a>
+              </div>
+              <!--Partners accordian option wrapper--><a href="#mob-menu-partners" data-toggle="collapse" data-parent="#MainMenu" class="list-group-item list-group-item-success collapsed">PARTNERS<span class="icon-uparrow"></span></a>
+              <!--Partners accordian collapse wrapper-->
+              <div id="mob-menu-partners" class="collapse"><a href="#" id="mr-menu-learning" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">LEARNING CENTER</a></div>
+              <!--Regions accordian option wrapper--><a href="#mob-menu-regions" data-toggle="collapse" data-parent="#MainMenu" class="list-group-item list-group-item-success collapsed">REGIONS<span class="icon-uparrow"></span></a>
+              <!--Regions accordian collapse wrapper-->
+              <div id="mob-menu-regions" class="collapse"><a href="#" id="mr-menu-region1" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">REGION1</a><a href="#" id="mr-menu-region2" class="list-group-item mr-collapse-list mr-mob-3rd-lev-menu">REGION2</a></div>
+            </div>
+          </div>
+          <!--help wrapper		-->
+          <div class="mr-help">HELP</div>
+        </div>
+      </div>
+      <div class="mr-mob-3rd-lev clearfix visible-xs">
+        <div class="mr-menu-design mr-hide mr-thrd-lvl-details">
+          <!--menu options start here-->
+          <div class="mr-thrd-lvl-menu-head">
+            <!--design option wrapper--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">DESIGN</span>
+          </div>
+          <div class="mr-mob-menu-col">
+            <!--sub menu option wrapper-->
+            <div class="mr-menu-sub-headng">GUIDELINES</div>
+            <!--option available under Guidelines--><a href="#" class="mr-menu-links">Design Deliverables</a><a href="#" class="mr-menu-links">Store Concepts</a><a href="#" class="mr-menu-links">Holistic Store Layout</a>
+            <div class="mr-menu-links">Accessibility</div><a href="#" class="mr-menu-links">Green Building</a><a href="#" class="mr-menu-links">Lighting Planning</a><a href="#" class="mr-menu-links">Artwork Program</a><a href="#" class="mr-menu-links">Signage Strategy</a><a href="#" class="mr-menu-links">Store Design & Brand</a><a href="#" class="mr-menu-links">Global Brand Assest</a><a href="#" class="mr-menu-links">Store Profiles & Stratification</a><a href="#" class="mr-menu-links">Licensed Stores</a>
+          </div>
+          <div class="mr-menu-sub-headng-wit-brdr">CATALOGS</div>
+          <div class="mr-mob-menu-col"><a href="#" class="mr-menu-links">Asia Pacific</a><a href="#" class="mr-menu-links">India</a><a href="#" class="mr-menu-links">China</a><a href="#" class="mr-menu-links">EMEA</a><a href="#" class="mr-menu-links">Americas</a><a href="#" class="mr-menu-links">Brazil</a></div>
+          <!--menu gallery option wrapper starts here-->
+          <div class="mr-menu-sub-headng-wit-brdr">Galleries</div>
+          <div class="mr-mob-menu-col">
+            <!--options in galleries--><a href="#" class="mr-menu-links">Ready to Hang</a><a href="#" class="mr-menu-links">Custom Printing</a><a href="#" class="mr-menu-links">Tools, Templates & Wallcoverings</a>
+          </div>
+          <div class="mr-option-contnr mr-left clearfix">
+            <!--toolbox button-->
+            <button class="mr-menu-itm-box clearfix"><span class="mr_bold mr-toolbox-style">TOOLBOX</span>
+            </button>
+            <div class="mr-communictn-wrp-re mr-mob-com-middle">
+              <div class="mr-communictn-headng">COMMUNICATION</div>
+              <div class="mr-border-div"></div>
+              <p class="mr-commnictn-contnt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mr-menu-real-estate mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head"> <span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">REAL ESTATE</span></div>
+          <div class="mr-mob-menu-col clearfix">
+            <button class="mr-menu-itm-box clearfix"><span class="mr_bold mr-toolbox-style">TOOLBOX</span>
+            </button>
+            <div class="mr-communictn-wrp-re mr-mob-com-middle">
+              <div class="mr-communictn-headng">COMMUNICATION</div>
+              <div class="mr-border-div"></div>
+              <p class="mr-commnictn-contnt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. </p>
+            </div>
+          </div>
+        </div>
+        <div class="mr-menu-construction mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option Construction--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">CONSTRUCTION</span>
+          </div>
+          <div class="mr-mob-menu-col">
+            <!--menu sub heading of construction-->
+            <div class="mr-menu-sub-headng">PRINCIPLES</div><a href="#" class="mr-menu-links">Electrical Design</a><a href="#" class="mr-menu-links">Electrical Primer</a><a href="#" class="mr-menu-links">Mechanical Design</a><a href="#" class="mr-menu-links">Mechanical Primer</a><a href="#" class="mr-menu-links">Plumbing Design</a><a href="#" class="mr-menu-links">Plumbing Primer</a><a href="#" class="mr-menu-links">The Renovation Process</a><a href="#" class="mr-menu-links">Major vs. Minor Renovation</a><a href="#" class="mr-menu-links">Financials & Budgeting</a><a href="#" class="mr-menu-links">Renovation Stanadards</a><a href="#" class="mr-menu-links">Store Renovation Ideology</a><a href="#" class="mr-menu-links">Store Renovation Strategy</a>
+          </div>
+          <div class="mr-menu-sub-headng-wit-brdr">Exterior</div>
+          <div class="mr-mob-menu-col"><a href="#" class="mr-menu-links">Casework</a><a href="#" class="mr-menu-links">Ceiling</a><a href="#" class="mr-menu-links">Doors</a><a href="#" class="mr-menu-links">Fixtures</a><a href="#" class="mr-menu-links">Flooring</a><a href="#" class="mr-menu-links">Graphics</a><a href="#" class="mr-menu-links">Lighting</a><a href="#" class="mr-menu-links">Utility</a><a href="#" class="mr-menu-links">Walls</a></div>
+          <div class="mr-menu-sub-headng-wit-brdr">Interior</div>
+          <div class="mr-mob-menu-col"><a href="#" class="mr-menu-links">Drive Thru Lane</a><a href="#" class="mr-menu-links">Finishes</a><a href="#" class="mr-menu-links">Site Work</a></div>
+          <div class="mr-option-contnr">
+            <button class="mr-menu-itm-box clearfix"><span class="mr_bold mr-toolbox-style">TOOLBOX</span>
+            </button>
+            <div class="mr-communictn-wrp-re mr-mob-com-middle">
+              <div class="mr-communictn-headng">COMMUNICATION</div>
+              <div class="mr-border-div"></div>
+              <p class="mr-commnictn-contnt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. 		</p>
+            </div>
+          </div>
+        </div>
+        <div class="mr-menu-facility mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option Facilities--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">FACILITIES</span>
+          </div>
+          <div class="mr-dep-sub-menu-detls clearfix">
+            <div class="mr-mob-menu-col">
+              <!--options available under facilities--><a href="#" class="mr-menu-links">Programs</a><a href="#" class="mr-menu-links">Resources</a><a href="#" class="mr-menu-links">Reports</a><a href="#" class="mr-menu-links">Application</a>
+            </div>
+          </div>
+          <div class="mr-option-contnr mr-facility-communication">
+            <div class="mr-communictn-wrp-re mr-mob-com-middle">
+              <div class="mr-communictn-headng">COMMUNICATION</div>
+              <div class="mr-border-div"></div>
+              <p class="mr-commnictn-contnt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text.	</p>
+            </div>
+          </div>
+        </div>
+        <div class="mr-menu-cafe mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option Cafe--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">CAFE</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix"><a href="#" class="mr-menu-links">Single Tenant Building (STB)</a><a href="#" class="mr-menu-links">End Cap</a><a href="#" class="mr-menu-links">In Line</a><a href="#" class="mr-menu-links">With Drive Thru</a></div>
+        </div>
+        <div class="mr-menu-temporary mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option Temporary--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">TEMPORARY</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix"><a href="#" class="mr-menu-links">Cart</a><a href="#" class="mr-menu-links">Trailer</a><a href="#" class="mr-menu-links">Truck</a><a href="#" class="mr-menu-links">Interior Modular Unit (IMU)</a></div>
+        </div>
+        <div class="mr-menu-drivethru mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head"> 
+            <!--menu option Drive through--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">DRIVE THRU</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix"><a href="#" class="mr-menu-links">Prefab Base</a><a href="#" class="mr-menu-links">Prefab Micro</a><a href="#" class="mr-menu-links">Prefab Container</a><a href="#" class="mr-menu-links">With Cafe</a><a href="#" class="mr-menu-links">Drive Thru Evolved</a></div>
+        </div>
+        <div class="mr-menu-walkup mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option Walk Up--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">WALK UP</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix"><a href="#" class="mr-menu-links">Prefab Coffee Stand</a><a href="#" class="mr-menu-links">Express</a></div>
+        </div>
+        <div class="mr-menu-kiosk mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option KIOSK--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">KIOSK</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix"><a href="#" class="mr-menu-links">Short - Licensed Stores</a><a href="#" class="mr-menu-links">Tall</a><a href="#" class="mr-menu-links">Custom</a></div>
+        </div>
+        <div class="mr-menu-region1 mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option REGION 1--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">REGION 1</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix">
+            <div class="mr-guidline-headng">GUIDELINES</div><a href="#" class="mr-menu-links">Country</a><a href="#" class="mr-menu-links">Country</a><a href="#" class="mr-menu-links">Country</a>
+          </div>
+        </div>
+        <div class="mr-menu-region2 mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option REGION 2--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">REGION 2</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix">
+            <div class="mr-guidline-headng">GUIDELINES	</div><a href="#" class="mr-menu-links">Country</a><a href="#" class="mr-menu-links">Country</a><a href="#" class="mr-menu-links">Country</a>
+          </div>
+        </div>
+        <div class="mr-menu-alternate mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option ALTERNATE FORMAT--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">ALTERNATE FORMAT</span>
+          </div>
+          <div class="mr-guidelines mr-left">
+            <div class="mr-guidline-headng">GUIDELINES	</div><a href="#" class="mr-menu-links">Core Store</a><a href="#" class="mr-menu-links">Drive Thru</a><a href="#" class="mr-menu-links">Walk Thru</a><a href="#" class="mr-menu-links">Coffee Stand</a>
+          </div>
+        </div>
+        <div class="mr-menu-learning mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option LEARNING CENTER--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">LEARNING CENTER</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix"><a href="#" class="mr-menu-links">SD101</a><a href="#" class="mr-menu-links">Licensed Stores Collective</a><a href="#" class="mr-menu-links">US Company Operated SD Process</a><a href="#" class="mr-menu-links">Immersion</a>
+          </div>
+          <div class="mr-left mr-option-contnr">
+            <!--recognition button-->
+            <button class="mr-menu-itm-box clearfix"><span class="mr-bold mr-gallery-style">RECOGNITION</span>
+            </button>
+          </div>
+        </div>
+        <div class="mr-menu-store-dev mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option STORE DEVELOPMENT--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">STORE DEVELOPMENT</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix"><a href="#" class="mr-menu-links">Development Strategies</a><a href="#" class="mr-menu-links">Store Development Systems</a><a href="#" class="mr-menu-links">Process Guide</a>
+          </div>
+        </div>
+        <div class="mr-menu-leadership mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option LEADERSHIP--><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">LEADERSHIP</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix"><a href="#" class="mr-menu-links">Store Cost Management</a>
+          </div>
+        </div>
+        <div class="mr-menu-innovation mr-thrd-lvl-details mr-hide">
+          <div class="mr-thrd-lvl-menu-head">
+            <!--menu option INNOVATION --><span class="icon-arrow_left mr-back-arrw-style mr-mob-menu-back"></span><span class="mr-thrd-lvl-menu-heading">INNOVATION</span>
+          </div>
+          <div class="mr-mob-menu-col clearfix"><a href="#" class="mr-menu-links">Drive Thru Evolved</a><a href="#" class="mr-menu-links">Evenings</a><a href="#" class="mr-menu-links">Wireless Charging</a><a href="#" class="mr-menu-links">Mobile Order & Pay</a><a href="#" class="mr-menu-links">Metal Casework</a><a href="#" class="mr-menu-links">Teavana</a><a href="#" class="mr-menu-links">Reserve Only Stores</a>
+          </div>
+        </div>
+      </div>
+      <!--Mobile menu ends here-->
+      <!--Header starts here-->
+      <div class="mr-top-hdr-icn mr-admin-actionbar">
+        <!--top left header options-->
+        <ul class="mr-top-hdr-lists">
+          <li class="mr-hdr-lst">BROWSE</li>
+          <li class="mr-hdr-lst">PAGE</li>
+          <li class="mr-hdr-lst">PUBLISH</li>
+        </ul>
+        <!--top right header options-->
+        <ul class="mr-top-hdr-shrtcts">
+          <li class="mr-hdr-rht-lsts"><span class="icon-full_screenmode"></span></li>
+          <li class="mr-hdr-rht-lsts"><span class="icon-edit"></span><span class="mr-shrtcts-txt hidden-xs">EDIT</span></li>
+          <li class="mr-hdr-rht-lsts"><span class="icon-favorite2"></span><span class="mr-shrtcts-txt hidden-xs">FOLLOW</span></li>
+          <li class="mr-hdr-rht-lsts"> <span class="icon-Share2"></span><span class="mr-shrtcts-txt hidden-xs">SHARE</span></li>
+        </ul>
+      </div>
+      <!--header starts here-->
+      <div id="mr-header" class="mr-header mr-main-header">
+        <div class="container">
+          <!--SDRC logo images--><img src="../images/starbuck_logo_small.png" class="hidden-xs mr-main-logo mr-left"><img src="../images/logo_text.png" class="hidden-xs mr-main-logo-text mr-left">
+          <!--burger menu icon for mobile view starts here-->
+          <div class="visible-xs mr-left clearfix mr-logo-container"><span class="mr-logo-burger icon-burger_menu mr-logo"></span><span class="mr-logo-sdrc icon-SDRC"></span></div>
+          <!--burger menu icon for mobile view ends here-->
+          <div class="mr-header-action">
+            <!--top search box wrapper starts here-->
+            <div class="mr-search-top-wrpr"><span class="icon-alerts icon-search mr-search-head-icon"></span>
+              <div class="search-box-on-click">
+                <input type="text" placeholder="Search" class="mr-search-textbox"><span class="icon-close mr-search-close-icon"></span>
+              </div>
+            </div>
+            <!--top search box wrapper ends here-->
+            <!--notification wrapper starts here-->
+            <div class="mr-notfi-wrpr">
+              <div class="icon-alerts mr-notifi mr-relative-pos"><span class="mr-notifi-count">10</span></div>
+              <div class="mr-notification-wrpr mr-hide">
+                <div class="mr-arrow-box clearfix">
+                  <ul class="mr-notifi-list-wrap">
+                    <li class="clearfix mr-notifi-list"><span class="icon-alerts mr-icon-notifi-style"></span>
+                      <div class="mr-notifi-cont-wrap"><span class="mr-notifi-content">Jacob Howard shared a page 'Educational Disks' for an approval.</span><span class="mr-notifi-time">Today - 11.30 AM</span></div>
+                    </li>
+                    <li class="clearfix mr-notifi-list"> <span class="icon-alerts mr-icon-notifi-style"></span>
+                      <div class="mr-notifi-cont-wrap"><span class="mr-notifi-content">'Green Building' page created by you is approved and published.</span><span class="mr-notifi-time">Yesterday - 12.21 AM</span></div>
+                    </li>
+                    <li class="clearfix mr-notifi-list"> <span class="icon-alerts mr-icon-notifi-style"></span>
+                      <div class="mr-notifi-cont-wrap"><span class="mr-notifi-content">Validity of Accessibility' page created by you is about to expire in 3 days.</span><span class="mr-notifi-time">Yesterday - 10.00 AM</span></div>
+                    </li>
+                    <li class="clearfix mr-notifi-list"> <span class="icon-alerts mr-icon-notifi-style"></span>
+                      <div class="mr-notifi-cont-wrap"><span class="mr-notifi-content">Validity of Accessibility' page created by you is about to expire in 3 days.</span><span class="mr-notifi-time">Yesterday - 10.00 AM</span></div>
+                    </li>
+                    <li class="clearfix mr-notifi-list"> <span class="icon-alerts mr-icon-notifi-style"></span>
+                      <div class="mr-notifi-cont-wrap"><span class="mr-notifi-content">Validity of Accessibility' page created by you is about to expire in 3 days.</span><span class="mr-notifi-time">Yesterday - 10.00 AM</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--notification wrapper ends here-->
+            <div class="mr-like-wrpr">
+              <div class="icon-favorites mr-like mr-relative-pos"><span class="mr-like-count">7</span></div>
+              <!--fav wrapper starts here-->
+              <div class="mr-fav-wrpr">
+                <div class="mr-arrow-box clearfix">
+                  <div class="mr-fav-item">
+                    <div class="mr-fav-item-name">Holistic Store Layout</div>
+                    <div title="Remove From Favourites" class="icon-close"></div>
+                  </div>
+                  <div class="mr-fav-item">
+                    <div class="mr-fav-item-name">Lighting Planning</div>
+                    <div title="Remove From Favourites" class="icon-close"></div>
+                  </div>
+                  <div class="mr-fav-item">
+                    <div class="mr-fav-item-name">Walk Off Mat Guidelines</div>
+                    <div title="Remove From Favourites" class="icon-close"></div>
+                  </div>
+                  <div class="mr-fav-item">
+                    <div class="mr-fav-item-name">Water System Assessment Form</div>
+                    <div title="Remove From Favourites" class="icon-close"></div>
+                  </div>
+                  <div class="mr-fav-item">
+                    <div class="mr-fav-item-name">Translation Site Survey</div>
+                    <div title="Remove From Favourites" class="icon-close"></div>
+                  </div>
+                  <div class="mr-fav-item">
+                    <div class="mr-fav-item-name">NCS Sample Form</div>
+                    <div title="Remove From Favourites" class="icon-close"></div>
+                  </div>
+                  <div class="mr-fav-item">
+                    <div class="mr-fav-item-name">Construction Signage Guidelines</div>
+                    <div title="Remove From Favourites" class="icon-close"></div>
+                  </div><a href="#" class="mr-show-on-home hidden-xs">Show on Home</a>
+                </div>
+              </div>
+              <!--fav wrapper ends here-->
+            </div>
+            <!--user information wrapper starts here-->
+            <div class="mr-user-info"><span class="mr-user-name-style hidden-xs">Chelsea Wood</span>
+              <!--user image--><img src="../images/profile.png" width="42px" height="42px" class="mr-user-pic"><span class="icon-down-arrow"></span>
+              <div class="mr-user-edit-wrpr mr-hide">
+                <div class="mr-arrow-box clearfix">
+                  <!--user profile option wrapper starts here-->
+                  <ul class="mr-user-edit-list-wrap">
+                    <li> <a href="#" class="mr-user-link-style">ABOUT ME</a></li>
+                    <li><a href="#" class="mr-user-link-style">EDIT PROFILE</a></li>
+                    <li><a href="#" class="mr-user-link-style">SIGN OUT  </a></li>
+                  </ul>
+                  <!--user profile option wrapper ends here-->
+                  <!--options for user about pages-->
+                  <ul class="mr-user-list-wrap">
+                    <li> <span href="#" class="mr-user-info-hdr">PAGES</span></li>
+                    <li><a href="#" class="mr-user-link-style">CREATE NEW PAGE</a></li>
+                    <li><a href="#" class="mr-user-link-style">PAGE LIST</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--user information wrapper ends here-->
+          </div>
+        </div>
+      </div>
+      <div class="mr-header mr-header-megamenu">
+        <div class="container">
+          <div class="hidden-xs mr-navigation clearfix">
+            <!--home icon-->
+            <div class="mr-home-icon-wrap"><span class="icon-home"></span></div>
+            <!--header navigation wrapper starts here-->
+            <ul class="nav nav-pills">
+              <!--overview option wrapper-->
+              <li role="presentation" class="active"><a href="#" class="nav-padding">OVERVIEW</a></li>
+              <!--functions option wrapper-->
+              <li role="presentation"><a href="#" class="nav-padding">FUNCTIONS</a></li>
+              <!--stores option wrapper-->
+              <li role="presentation"><a href="#" class="nav-padding">STORES</a></li>
+              <!--innovation option wrapper-->
+              <li role="presentation"><a href="#" class="nav-padding">INNOVATION</a></li>
+              <!--partners option wrapper-->
+              <li role="presentation"><a href="#" class="nav-padding">PARTNERS</a></li>
+              <!--regions option wrapper-->
+              <li role="presentation"><a href="#" class="nav-padding">REGIONS	</a></li>
+            </ul>
+            <!--header navigation wrapper ends here							-->
+          </div>
+        </div>
+      </div>
+      <ul class="menu-items-detls-wrpr hidden-xs">
+        <!--container of the menu details-->
+        <li class="fluid-container mr-grid clearfix">
+          <div class="mr-dep-sub-menu-detls">
+            <div class="mr-menu-col1">
+              <!--sub menu heading-->
+              <div class="mr-menu-sub-headng">STORE DEVELOPMENT</div>
+              <!--sub menu options--><a href="#" class="mr-menu-links">Development Strategies</a><a href="#" class="mr-menu-links">Store Development Systems</a><a href="#" class="mr-menu-links">Process Guide</a>
+            </div>
+            <div class="mr-menu-col3">
+              <!--sub menu heading-->
+              <div class="mr-menu-sub-headng">LEADERSHIP</div>
+              <!--sub menu options--><a href="#" class="mr-menu-links">Store Cost Management</a>
+            </div>
+            <!--edit button wrapper-->
+            <div class="mr-button-wrap mr-dropdown-button-wrap">
+              <button class="mr-edit-btn-style mr-dropdown-button">EDIT</button>
+            </div>
+          </div>
+        </li>
+        <li class="fluid-container mr-grid clearfix">
+          <!--sub menu list-->
+          <div class="mr-dep-sub-menu mr-left"><span class="mr-sub-menu-option mr-menu-active">CONSTRUCTION</span><span class="mr-sub-menu-option">DESIGN</span><span class="mr-sub-menu-option">FACILITIES</span><span class="mr-sub-menu-option">REAL ESTATE</span></div>
+          <!--sub menu details list starts here-->
+          <div class="mr-sub-menu-wrap">
+            <div class="mr-sub-menu-active-bg"></div>
+            <div id="mr-construction-sub-menu" class="clearfix mr-dep-sub-men-wrp">
+              <div class="mr-dep-sub-menu-detls">
+                <!--first column of the construction sub menu-->
+                <div class="mr-menu-col1">
+                  <div class="mr-menu-sub-headng">Principles</div><a href="#" id="electrical-design" class="mr-menu-links">Electrical Design</a><a href="#" id="electtrical-primer" class="mr-menu-links">Electrical Primer</a><a href="#" class="mr-menu-links">Mechanical Design</a><a href="#" class="mr-menu-links">Mechanical Primer</a><a href="#" class="mr-menu-links">Plumbing Design</a><a href="#" class="mr-menu-links">Plumbing Primer</a><a href="#" class="mr-menu-links">The Renovation Process</a><a href="#" class="mr-menu-links">Renovation</a><a href="#" class="mr-menu-links">Financials & Budgeting</a><a href="#" class="mr-menu-links">Renovation Stanadards</a><a href="#" class="mr-see-all">See All...</a><a href="#" class="mr-menu-links mr-hdr-hidden-itm">Store Renovation Ideology</a><a href="#" class="mr-menu-links mr-hdr-hidden-itm">Store Renovation Strategy</a>
+                </div>
+                <!--second column of the construction sub menu-->
+                <div class="mr-menu-col2">
+                  <div class="mr-menu-sub-headng">Exterior</div><a href="#" class="mr-menu-links">Casework</a><a href="#" class="mr-menu-links">Ceiling</a><a href="#" class="mr-menu-links">Doors</a><a href="#" class="mr-menu-links">Fixtures</a><a href="#" class="mr-menu-links">Flooring</a><a href="#" class="mr-menu-links">Graphics</a><a href="#" class="mr-menu-links">Lighting</a><a href="#" class="mr-menu-links">Utility</a><a href="#" class="mr-menu-links">Walls</a>
+                </div>
+                <!--Third column of the construction sub menu-->
+                <div class="mr-menu-col3">
+                  <div class="mr-menu-sub-headng">Interior</div><a href="#" class="mr-menu-links">Drive Thru Lane</a><a href="#" class="mr-menu-links">Finishes</a><a href="#" class="mr-menu-links">Site Work	</a>
+                </div>
+                <div class="mr-menu-col3"></div>
+                <!--forth column of the construction sub menu-->
+                <div class="mr-menu-col4">
+                  <button class="mr-menu-itm-box clearfix"><span class="mr_bold mr-toolbox-style">TOOLBOX</span></button>
+                  <div class="mr-communictn-wrp">
+                    <div class="mr-communictn-headng">COMMUNICATION</div>
+                    <div class="mr-border-div"></div>
+                    <p class="mr-commnictn-contnt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--details of the design sub menu-->
+            <div id="mr-design-sub-menu" class="clearfix mr-dep-sub-men-wrp mr-hide">
+              <div class="mr-dep-sub-menu-detls">
+                <!--first column of the design sub menu-->
+                <div class="mr-menu-col1">
+                  <div class="mr-menu-sub-headng">PRINCIPLES</div><a href="#" class="mr-menu-links">Design Deliverables</a><a href="#" class="mr-menu-links">Store Concepts</a><a href="#" class="mr-menu-links">Holistic Store Layout</a><a href="#" class="mr-menu-links">Accessibility</a><a href="#" class="mr-menu-links">Green Building</a><a href="#" class="mr-menu-links">Lighting Planning</a><a href="#" class="mr-menu-links">Artwork Program</a><a href="#" class="mr-menu-links">Signage Strategy</a><a href="#" id="brand-in-stores" class="mr-menu-links">Store Design & Brand </a><a href="#" class="mr-menu-links">Global Brand Assest</a><a href="#" class="mr-see-all">See All...</a><a href="#" class="mr-menu-links mr-hdr-hidden-itm">Store Profiles & Stratification</a><a href="#" class="mr-menu-links mr-hdr-hidden-itm">Licensed Stores</a>
+                </div>
+                <!--second column of the design sub menu-->
+                <div class="mr-menu-col2">
+                  <div class="mr-menu-sub-headng">CATALOGS</div><a href="#" class="mr-menu-links">Asia Pacific</a><a href="#" class="mr-menu-links">India</a><a href="#" class="mr-menu-links">China</a><a href="#" class="mr-menu-links">EMEA</a><a href="#" class="mr-menu-links">Americas</a><a href="#" class="mr-menu-links">Brazil</a>
+                </div>
+                <!--third column of the design sub menu-->
+                <div class="mr-menu-col3">
+                  <div class="mr-menu-sub-headng">GALLERIES</div><a href="#" class="mr-menu-links">Ready to Hang</a><a href="#" class="mr-menu-links">Custom Printing</a><a href="#" class="mr-menu-links">Tools, Templates & Wallcoverings</a>
+                </div>
+                <!--forth column of the design sub menu-->
+                <div class="mr-menu-col4">
+                  <button class="mr-menu-itm-box clearfix"><span class="mr_bold mr-toolbox-style">TOOLBOX</span>
+                  </button>
+                  <div class="mr-communictn-wrp">
+                    <div class="mr-communictn-headng">COMMUNICATION</div>
+                    <div class="mr-border-div"></div>
+                    <p class="mr-commnictn-contnt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--details of the facilities sub menu-->
+            <div id="mr-facilities-sub-menu" class="clearfix mr-dep-sub-men-wrp mr-hide">
+              <div class="mr-dep-sub-menu-detls">
+                <!--first column of thefacilities sub menu-->
+                <div class="mr-menu-col1"><a href="#" class="mr-menu-links">Programs</a><a href="#" class="mr-menu-links">Resources</a><a href="#" class="mr-menu-links">Reports</a><a href="#" class="mr-menu-links">Application</a></div>
+                <div class="mr-menu-col1 mr-menu-comm">
+                  <div class="mr-communictn-wrp-re">
+                    <div class="mr-communictn-headng">COMMUNICATION</div>
+                    <div class="mr-border-div"></div>
+                    <p class="mr-commnictn-contnt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--details of the real sub menu-->
+            <div id="mr-real-sub-menu" class="clearfix mr-dep-sub-men-wrp mr-hide">
+              <div class="mr-menu-col1 mr-menu-comm mr-col-ext-padding">
+                <!--toolbox button-->
+                <button class="mr-menu-itm-box clearfix"><span class="mr_bold mr-toolbox-style">TOOLBOX</span></button>
+                <div class="mr-communictn-wrp-re">
+                  <div class="mr-communictn-headng">COMMUNICATION</div>
+                  <div class="mr-border-div"></div>
+                  <p class="mr-commnictn-contnt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. </p>
+                </div>
+              </div>
+            </div>
+            <!--edit button-->
+            <div class="mr-button-wrap mr-dropdown-button-wrap">
+              <button class="mr-edit-btn-style mr-dropdown-button">EDIT</button>
+            </div>
+          </div>
+        </li>
+        <!--stores menu options-->
+        <li class="fluid-container mr-grid clearfix">
+          <div class="mr-dep-sub-menu mr-left">
+            <!--list of stores menu--><span class="mr-sub-menu-option mr-menu-active">CAFE</span><span class="mr-sub-menu-option">DRIVE THRU</span><span class="mr-sub-menu-option">KIOSK</span><span class="mr-sub-menu-option">TEMPORARY</span><span class="mr-sub-menu-option">WALK UP</span>
+          </div>
+          <div class="mr-sub-menu-wrap">
+            <div class="mr-sub-menu-active-bg"></div>
+            <!--cafe submenu starts here-->
+            <div id="mr-cafe-sub-menu" class="clearfix mr-dep-sub-men-wrp">
+              <div class="mr-dep-sub-menu-detls">
+                <div class="mr-menu-col1"><a href="#" class="mr-menu-links">Single Tenant Building (STB)</a><a href="#" class="mr-menu-links">End Cap</a><a href="#" class="mr-menu-links">In Line</a><a href="#" class="mr-menu-links">With Drive Thru</a></div>
+              </div>
+            </div>
+            <!--drivethrough submenu starts here-->
+            <div id="mr-drivethru-sub-menu" class="clearfix mr-dep-sub-men-wrp mr-hide">
+              <div class="mr-dep-sub-menu-detls">
+                <div class="mr-menu-col1"><a href="#" class="mr-menu-links">Prefab Base</a><a href="#" class="mr-menu-links">Prefab Micro</a><a href="#" class="mr-menu-links">Prefab Container</a><a href="#" class="mr-menu-links">With Cafe</a><a href="#" class="mr-menu-links">Drive Thru Evolved</a></div>
+              </div>
+            </div>
+            <!--kiosk submenu starts here-->
+            <div id="mr-kiosk-sub-menu" class="clearfix mr-dep-sub-men-wrp mr-hide">
+              <div class="mr-dep-sub-menu-detls">
+                <div class="mr-menu-col1"><a href="#" class="mr-menu-links">Short - Licensed Stores</a><a href="#" class="mr-menu-links">Tall</a><a href="#" class="mr-menu-links">Custom</a></div>
+              </div>
+            </div>
+            <!--submenu starts here-->
+            <div id="mr-temp-sub-menu" class="clearfix mr-dep-sub-men-wrp mr-hide">
+              <div class="mr-dep-sub-menu-detls">
+                <div class="mr-menu-col1"><a href="#" class="mr-menu-links">Cart</a><a href="#" class="mr-menu-links">Trailer</a><a href="#" class="mr-menu-links">Truck</a><a href="#" class="mr-menu-links">Interior Modular Unit (IMU)</a></div>
+              </div>
+            </div>
+            <!--walkup submenu starts here-->
+            <div id="mr-walkup-sub-menu" class="clearfix mr-dep-sub-men-wrp mr-hide">
+              <div class="mr-dep-sub-menu-detls">
+                <div class="mr-menu-col1"><a href="#" class="mr-menu-links">Prefab Coffee Stand</a><a href="#" class="mr-menu-links">Express</a></div>
+              </div>
+            </div>
+            <div class="mr-button-wrap mr-dropdown-button-wrap">
+              <button class="mr-edit-btn-style mr-dropdown-button">EDIT</button>
+            </div>
+          </div>
+        </li>
+        <li class="fluid-container clearfix mr-grid mr-no-padding">
+          <div class="mr-margin-left mr-margin-top30"><a href="#" class="mr-menu-links mr-menu-innovation-style">Drive Thru Evolved</a><a href="#" class="mr-menu-links mr-menu-innovation-style">Evenings</a><a href="#" class="mr-menu-links mr-menu-innovation-style">Wireless Charging</a><a href="#" class="mr-menu-links mr-menu-innovation-style">Mobile Order & Pay</a><a href="#" class="mr-menu-links mr-menu-innovation-style">Metal Casework</a><a href="#" class="mr-menu-links mr-menu-innovation-style">Teavana</a><a href="#" class="mr-menu-links mr-menu-innovation-style">Reserve Only Stores</a></div>
+          <div class="mr-button-wrap mr-dropdown-button-wrap">
+            <button class="mr-edit-btn-style mr-dropdown-button mr-margin-left">EDIT</button>
+          </div>
+        </li>
+        <li class="fluid-container mr-grid clearfix">
+          <div class="mr-dep-sub-menu-detls">
+            <div class="mr-menu-col1">
+              <div class="mr-menu-sub-headng">LEARNING CENTER</div><a href="#" class="mr-menu-links">SD101</a><a href="#" class="mr-menu-links">Licensed Stores Collective</a><a href="#" class="mr-menu-links">US Company Operated SD Process</a><a href="#" class="mr-menu-links">Immersion</a>
+            </div>
+            <div class="mr-menu-col3">
+              <button class="mr-menu-itm-box clearfix"><span class="mr-bold mr-gallery-style">RECOGNITION</span></button>
+            </div>
+            <div class="mr-button-wrap mr-dropdown-button-wrap">
+              <button class="mr-edit-btn-style mr-dropdown-button">EDIT</button>
+            </div>
+          </div>
+        </li>
+        <li class="fluid-container mr-grid clearfix">
+          <div class="mr-dep-sub-menu mr-left"><span class="mr-sub-menu-option mr-menu-active">REGION 1</span><span class="mr-sub-menu-option">REGION 2</span></div>
+          <div class="mr-sub-menu-wrap">
+            <div class="mr-sub-menu-active-bg"></div>
+            <div id="alternate-sub-menu" class="clearfix mr-dep-sub-men-wrp">
+              <div class="mr-dep-sub-menu-detls">
+                <div class="mr-menu-col1">
+                  <div class="mr-menu-sub-headng">GUIDELINES</div><a href="#" class="mr-menu-links">Country</a><a href="#" class="mr-menu-links">Country</a><a href="#" class="mr-menu-links">Country</a><a href="#" class="mr-menu-links">Country</a>
+                </div>
+              </div>
+            </div>
+            <div id="cafe-sub-menu" class="clearfix mr-dep-sub-men-wrp mr-hide">
+              <div class="mr-dep-sub-menu-detls">
+                <div class="mr-menu-col1">
+                  <div class="mr-menu-sub-headng">GUIDELINES</div><a href="#" class="mr-menu-links">Country</a><a href="#" class="mr-menu-links">Country</a><a href="#" class="mr-menu-links">Country</a><a href="#" class="mr-menu-links">Country</a>
+                </div>
+              </div>
+            </div>
+            <div class="mr-button-wrap mr-dropdown-button-wrap">
+              <button class="mr-edit-btn-style mr-dropdown-button">EDIT</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!--Header ends here-->
+      <!--Common main wrapper starts here-->
+      <div id="mr-main-content">
+        <!--Breadcrumb starts here-->
+        <div class="mr-breadcrumb mr-flowr-bckgrnd">
+          <div class="fluid-container mr-grid mr-auto-padding">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p class="mr-page-name mr-left mr-letter-spacing">NEWS</p><span onClick="location.href='home.html'" class="icon-close mr-close-button"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Breadcrumb ends here-->
+        <!--white background for the page-->
+        <div class="mr-white-background">
+          <div class="mr-prcs-guide-cont">
+            <!--news search input wrappper starts here-->
+            <form class="mr-search-toolbox visible-xs">
+              <div class="input-group mr-search-toolbox-wrpr">
+                <input type="text" placeholder="Search News" class="form-control mr-search"><span class="icon-search"></span>
+              </div>
+            </form>
+            <!--news search input wrappper ends here-->
+            <!--fluid container and the grid for the specific width for the container-->
+            <div class="fluid-container mr-grid mr-auto-padding">
+              <div class="row mr-cont-wrp clearfix">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <!--news search input wrappper starts here-->
+                  <form class="mr-search-toolbox mr-news-search hidden-xs">
+                    <div class="input-group mr-search-toolbox-wrpr">
+                      <input type="text" placeholder="Search News" class="form-control mr-search"><span class="icon-search"></span>
+                    </div>
+                  </form>
+                  <!--news search input wrappper ends here-->
+                  <!--'publish as news paper' button wrapper starts here-->
+                  <div class="mr-link-for-partners hidden-xs">
+                    <button class="mr-button-send mr-news-button-style"><span class="icon-email mr-icon"></span><span>PUBLISH AS NEWSLETTER</span></button>
+                  </div>
+                  <!--'publish as news paper' button wrapper ends here-->
+                  <!--'Region' dropdown wrapper for large screen starts here-->
+                  <div class="clearfix mr-select-box-style hidden-xs">
+                    <div class="mr-region-select mr-clear-selectbox mr-width-select-box">
+                      <div class="mr-select-wrp clearfix">
+                        <div class="mr-region">Region<span class="hidden-xs">:</span></div>
+                        <select class="mr-select-list">
+                          <option>All</option>
+                          <option>All</option>
+                          <option>All</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <!--'Region' dropdown wrapper for large screen ends here-->
+                  <!--'Region' dropdown wrapper for mobile view starts here-->
+                  <div class="mr-select-wrp clearfix news-select-width mr-left-wrap hidden-sm hidden-md hidden-lg mr-region-wrapr">
+                    <div class="mr-region-select mr-clear-selectbox">
+                      <div class="mr-select-wrp clearfix">
+                        <div class="mr-region">Region :</div>
+                        <select class="mr-select-list">
+                          <option>All</option>
+                          <option>All</option>
+                          <option>All</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <!--'Region' dropdown wrapper for mobile view ends here-->
+                  <!--top news in the page starts here-->
+                  <div class="mr-top-news">
+                    <div class="mr-featured">FEATURED</div>
+                    <div class="mr-scroll-items clearfix">
+                      <!--featured news wrapper-->
+                      <div class="mr-featured-news">
+                        <!--image about the featured news--><img src="../images/news_img1.jpg" class="mr-news-img-top">
+                        <div class="mr-featured-news-img-detail-wrp clearfix">
+                          <!--date of the news-->
+                          <div class="mr-news-featured-date-text hidden-xs">2 Jan 2015</div>
+                          <!--edit icon-->
+                          <div class="icon-edit mr-news-edit-style"></div>
+                          <!--news details wrappper starts here-->
+                          <div class="mr-news-img-details">
+                            <h3 class="mr-news-img-details-header">New Store Development Immersion Launch</h3>
+                            <p class="mr-news-img-details-content">Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Integer volupat varius iaculis Nunc ac laoreet nunc.</p>
+                          </div>
+                          <!--news details wrappper ends here-->
+                        </div>
+                      </div>
+                      <!--featured news wrapper-->
+                      <div class="mr-featured-news">
+                        <!--image about the featured news-->
+                        <!--image about the featured news--><img src="../images/news_img1.jpg" class="mr-news-img-top">
+                        <div class="mr-news-dates-wrap mr-featured-news-img-detail-wrp clearfix hidden-xs">
+                          <!--date of the news-->
+                          <div class="mr-news-featured-date-text">2 Jan 2015</div>
+                          <!--edit icon-->
+                          <div class="icon-edit mr-news-edit-style"></div>
+                          <!--news alert icon-->
+                          <div title="Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Integer volupat varius iaculis Nunc ac laoreet nunc." class="icon-News_Alert mr-icon-information"></div>
+                          <!--news details wrappper starts here-->
+                          <div class="mr-news-img-details">
+                            <h3 class="mr-news-img-details-header">Bellevue 303, Bellevue, Washington, USA</h3>
+                            <p class="mr-news-img-details-content">Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Integer volupat varius iaculis Nunc ac laoreet nunc.</p>
+                          </div>
+                          <!--news details wrappper ends here-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--top news in the page ends here-->
+                  <div class="row">
+                    <div class="col-md-9 col-lg-9 col-sm-9">
+                      <div class="row">
+                        <!--current week news wrapper-->
+                        <div class="mr-more-news col-sm-12 col-lg-12 col-md-12 col-xs-12">MORE NEWS THIS WEEK
+                          <div class="mr-news-image-swipe mr-image-head-spacing">
+                            <!--images block starts here-->
+                            <ul class="mr-row-child clearfix row">
+                              <!--image wrapper starts here-->
+                              <li class="mr-news-image col-sm-4 col-md-4 col-lg-4">
+                                <h3 class="mr-news-image-text">DESIGN, CONSTRUCTION</h3>
+                                <!--image in the wrapper--><img src="../images/news_img1.jpg" class="mr-news-image-div">
+                                <!--news date wrapper starts here-->
+                                <div class="mr-news-date-wrpr"><span class="mr-date">20 Dec 2014</span><span class="icon-edit mr-news-image-icon hidden-xs"></span><span class="icon-News_Alert mr-icon-info"></span></div>
+                                <!--news date wrapper ends here-->
+                                <!--image description wrapper-->
+                                <div class="row clearfix">
+                                  <div class="col-md-10 col-lg-10 col-sm-9">
+                                    <p class="mr-image-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <!--image wrapper starts here-->
+                              <!--image wrapper ends here-->
+                              <li class="mr-news-image col-sm-4 col-md-4 col-lg-4">
+                                <h3 class="mr-news-image-text">FACILITIES</h3>
+                                <!--image in the wrapper--><img src="../images/news_img2.jpg" class="mr-news-image-div">
+                                <!--news date wrapper starts here-->
+                                <div class="mr-news-date-wrpr"><span class="mr-date">20 Dec 2014</span><span class="icon-edit mr-news-image-icon hidden-xs"></span></div>
+                                <!--news date wrapper ends here-->
+                                <!--image description wrapper-->
+                                <div class="row clearfix">
+                                  <div class="col-md-10 col-lg-10 col-sm-9">
+                                    <p class="mr-image-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <!--image wrapper starts here-->
+                              <!--image wrapper ends here-->
+                              <li class="mr-news-image col-sm-4 col-md-4 col-lg-4">
+                                <h3 class="mr-news-image-text">DESIGN</h3>
+                                <!--image in the wrapper--><img src="../images/news_img3.jpg" class="mr-news-image-div">
+                                <!--news date wrapper starts here-->
+                                <div class="mr-news-date-wrpr"><span class="mr-date">20 Dec 2014</span><span class="icon-edit mr-news-image-icon hidden-xs"></span></div>
+                                <!--news date wrapper ends here-->
+                                <!--image description wrapper-->
+                                <div class="row clearfix">
+                                  <div class="col-md-10 col-lg-10 col-sm-9">
+                                    <p class="mr-image-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <!--image wrapper starts here-->
+                            </ul>
+                            <!--images block ends here		-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row"> 
+                        <div class="mr-more-news col-sm-12 col-lg-12 col-md-12 col-xs-12"> <span class="mr-news-info-date">WEEK DEC 15 -19</span>
+                          <div class="mr-news-article-info">No News Articles present for this week<span class="mr-arrow-left mr-news-arrow-style">			</span></div>
+                        </div>
+                      </div>
+                      <div class="row"> 
+                        <div class="mr-more-news col-sm-12 col-lg-12 col-md-12 col-xs-12">WEEK Dec 8 -12
+                          <div class="mr-news-image-swipe mr-image-head-spacing">
+                            <!--images block starts here-->
+                            <ul class="mr-row-child clearfix row">
+                              <!--image wrapper starts here-->
+                              <li class="mr-news-image col-sm-4 col-md-4 col-lg-4">
+                                <h3 class="mr-news-image-text">REAL ESTATE</h3>
+                                <!--image in the wrapper--><img src="../images/news_img7.jpg" class="mr-news-image-div">
+                                <!--news date wrapper starts here-->
+                                <div class="mr-news-date-wrpr clearfix"><span class="mr-date">20 Dec 2014</span><span class="icon-edit mr-news-image-icon hidden-xs"></span></div>
+                                <!--news date wrapper ends here-->
+                                <!--image description wrapper-->
+                                <div class="row clearfix">
+                                  <div class="col-md-10 col-lg-10 col-sm-9">
+                                    <p class="mr-image-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <!--image wrapper starts here-->
+                              <!--image wrapper ends here-->
+                              <li class="mr-news-image col-sm-4 col-md-4 col-lg-4">
+                                <h3 class="mr-news-image-text">DESIGN</h3>
+                                <!--image in the wrapper--><img src="../images/news_img8.jpg" class="mr-news-image-div">
+                                <!--news date wrapper starts here-->
+                                <div class="mr-news-date-wrpr clearfix"><span class="mr-date">20 Dec 2014</span><span class="icon-edit mr-news-image-icon hidden-xs"></span></div>
+                                <!--image description wrapper-->
+                                <div class="row clearfix">
+                                  <div class="col-md-10 col-lg-10 col-sm-9">
+                                    <p class="mr-image-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+                                  </div>
+                                </div>
+                                <!--news date wrapper ends here-->
+                              </li>
+                              <!--image wrapper starts here-->
+                              <!--image wrapper ends here-->
+                              <li class="mr-news-image col-sm-4 col-md-4 col-lg-4">
+                                <h3 class="mr-news-image-text">FACILITIES,DESIGN</h3>
+                                <!--image in the wrapper--><img src="../images/news_img9.jpg" class="mr-news-image-div">
+                                <!--news date wrapper starts here-->
+                                <div class="mr-news-date-wrpr clearfix"><span class="mr-date">20 Dec 2014</span><span class="icon-edit mr-news-image-icon hidden-xs"></span><span class="icon-News_Alert mr-icon-info"></span></div>
+                                <!--news date wrapper ends here-->
+                                <!--image description wrapper-->
+                                <div class="row clearfix">
+                                  <div class="col-md-10 col-lg-10 col-sm-9">
+                                    <p class="mr-image-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <!--image wrapper starts here-->
+                            </ul>
+                            <!--images block ends here-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--GSDW links wrapper on the right side of the screen-->
+                    <div class="col-lg-3 col-md-3 col-sm-3 mr-news-related-links">
+                      <div class="row mr-report-wrpr">
+                        <div class="bottom-table-links mr-decafe-table-links col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <!--header of the wrappper-->
+                          <h2 class="mr-related-links">GSDW LINKS</h2>
+                          <!--GSDW links list-->
+                          <ul class="related-link-lists">
+                            <li class="mr-links mr-active">Americas Partner Announcements</li>
+                            <li class="mr-links">GSDW Article Archives</li>
+                            <li class="mr-links">Global Development Posted Positions</li>
+                            <li class="mr-links">Submit an Article</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!--PARTNER ANNOUNCEMENTS button wrapper starts here-->
+                      <div class="row mr-report-wrpr">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mr-partner-btn">
+                          <button class="mr-button-send">PARTNER ANNOUNCEMENTS</button>
+                        </div>
+                      </div>
+                      <!--PARTNER ANNOUNCEMENTS button wrapper ends here-->
+                      <!--VIEW ARCHIVES button wrapper starts here-->
+                      <div class="row mr-report-wrpr hidden-xs">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mr-partner-btn">
+                          <button class="mr-button-send">VIEW ARCHIVES</button>
+                        </div>
+                      </div>
+                      <!--VIEW ARCHIVES button wrapper ends here-->
+                      <!--ORG ANNOUNCEMENTS button wrapper starts here-->
+                      <div class="row mr-report-wrpr visible-xs">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mr-partner-btn">
+                          <button class="mr-button-send">ORG ANNOUNCEMENTS</button>
+                        </div>
+                      </div>
+                      <!--ORG ANNOUNCEMENTS button wrapper ends here-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mr-footer-length">
+                <!--loading spinner wrappper starts here-->
+                <div class="mr-spinner hidden-lg hidden-md hidden-sm">
+                  <div class="mr-spinner-container mr-container-first">
+                    <div class="mr-circle1"></div>
+                    <div class="mr-circle2"></div>
+                    <div class="mr-circle3"></div>
+                    <div class="mr-circle4"></div>
+                  </div>
+                  <div class="mr-spinner-container mr-container-second">
+                    <div class="mr-circle1"></div>
+                    <div class="mr-circle2"></div>
+                    <div class="mr-circle3"></div>
+                    <div class="mr-circle4"></div>
+                  </div>
+                  <div class="mr-spinner-container mr-container-three">
+                    <div class="mr-circle1"></div>
+                    <div class="mr-circle2"></div>
+                    <div class="mr-circle3"></div>
+                    <div class="mr-circle4 hidden-lg hidden-md hidden-sm"></div>
+                  </div>
+                  <div class="mr-ie-spinner"></div>
+                </div>
+                <!--loading spinner wrappper ends here-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Common main wrapper ends here-->
+    </div>
+    <!--Footer starts here-->
+    <div id="mr-footer" class="mr-footer">
+      <!--fluid container and grid to define the page width-->
+      <div class="fluid-container mr-grid clearfix mr-footer-options">
+        <div class="row mr-footer-tab">
+          <div class="col-md-6 hidden-xs1 col-sm-6 clearfix">
+            <div class="row">
+              <!--footer options wrapper starts here-->
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="mr-list-footer">
+                  <li class="mr-list-first-element col-xs-4 mr-list-left"><a href="#" class="mr-link-details">ABOUT</a></li>
+                  <li class="mr-list-elements col-xs-4 mr-list-middle"><a href="#" class="mr-link-details">MY PROFILE</a></li>
+                  <li class="mr-list-elements col-xs-4 mr-list-right"><a href="#" class="mr-link-details">NEWS</a></li>
+                  <li class="mr-list-elements col-xs-4 mr-list-left"><a href="#" class="mr-link-details">HELP</a></li>
+                  <li class="mr-list-elements col-xs-4 mr-list-middle"><a href="#" class="mr-link-details">FAQs</a></li>
+                  <li class="mr-list-elements col-xs-4 mr-list-right"><a href="#" class="mr-link-details">DISCLAIMER</a></li>
+                </ul>
+              </div>
+              <!--footer options wrapper ends here-->
+              <!--social media icons wrapper for mobile view starts here-->
+              <div class="col-xs-12 visible-xs">
+                <div class="social__container">
+                  <!--pintrest link icon wrappper-->
+                  <div class="social__item"><a target="_blank" href="http://pintrest.com" class="social__icon--pintrest"><span class="icon-pinterest"></span></a></div>
+                  <!--instagram link icon wrappper-->
+                  <div class="social__item"><a target="_blank" href="http://instagram.com" class="social__icon--instagram"><span class="icon-instagram"></span></a></div>
+                  <!--youtube link icon wrappper-->
+                  <div class="social__item"><a target="_blank" href="http://youtube.com" class="social__icon--pintrest"><span class="icon-youtube"></span></a></div>
+                  <!--googleplus link icon wrappper-->
+                  <div class="social__item"><a target="_blank" href="https://plus.google.com" class="social__icon--googleplus"><span class="icon-google_plus"></span></a></div>
+                  <!--facebook link icon wrappper-->
+                  <div class="social__item"><a target="_blank" href="http://facebook.com" class="social__icon--facebook"><span class="icon-facebook"></span></a></div>
+                  <!--twitter link icon wrapper-->
+                  <div class="social__item"><a target="_blank" href="https://twitter.com" class="social__icon--twitter"><span class="icon-twitter"></span></a></div>
+                </div>
+              </div>
+              <!--social media icons wrapper for mobile view ends here-->
+              <!--all rights reserved text wrapper starts here-->
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mr-copyright"><span>&copy;2014 STARBUCKS CORPORATION.ALL RIGHTS ARE RESERVED</span></div>
+              <!--all rights reserved text wrapper ends here-->
+            </div>
+          </div>
+          <!--social media icons wrapper for large view starts here-->
+          <div class="col-md-6 col-sm-6 col-lg-6 hidden-xs">
+            <div class="social__container">
+              <!--pintrest link icon wrapper-->
+              <div class="social__item"><a target="_blank" href="http://pintrest.com" class="social__icon--pintrest"><span class="icon-pinterest"></span></a></div>
+              <!--instagram link icon wrapper-->
+              <div class="social__item"><a target="_blank" href="http://instagram.com" class="social__icon--instagram"><span class="icon-instagram"></span></a></div>
+              <!--youtube link icon wrapper-->
+              <div class="social__item"><a target="_blank" href="http://youtube.com" class="social__icon--pintrest"><span class="icon-youtube"></span></a></div>
+              <!--googleplus link icon wrapper-->
+              <div class="social__item"><a target="_blank" href="https://plus.google.com" class="social__icon--googleplus"><span class="icon-google_plus"></span></a></div>
+              <!--facebook link icon wrapper-->
+              <div class="social__item"><a target="_blank" href="http://facebook.com" class="social__icon--facebook"><span class="icon-facebook"></span></a></div>
+              <!--twitter link icon wrapper-->
+              <div class="social__item"><a target="_blank" href="https://twitter.com" class="social__icon--twitter"><span class="icon-twitter"></span></a></div>
+            </div>
+          </div>
+          <!--social media icons wrapper for large view ends here-->
+        </div>
+      </div>
+    </div>
+    <!--Footer ends here-->
+    <!--Overlay starts here-->
+    <div class="mr-menu-overlay-base hidden-sm hidden-md hidden-lg"></div>
+    <!--Overlay ends here-->
+  </body>
+</html>

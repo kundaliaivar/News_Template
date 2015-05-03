@@ -1,0 +1,20 @@
+/*************************************
+//
+//   Admin
+//   -> Admin styles
+//
+// *************************************/
+/**************** Admin styles starts here *****************/
+.mr-home-quick-link {
+  width: 100% !important; }
+
+.mr-quick-link-edit {
+  display: none !important; }
+
+.icon-edit, .menu-items-detls-wrpr .mr-button-wrap.mr-dropdown-button-wrap {
+  display: none !important; }
+
+.mr-admin-actionbar {
+  display: none; }
+
+/**************** Admin styles ends here *****************/
